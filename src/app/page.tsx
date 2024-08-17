@@ -1,13 +1,11 @@
 import { Header } from "@/components/header";
 import { Introduction } from "@/components/introduction";
-import { Products } from "@/components/products";
 
 export default function Home() {
   return (
-    <>
+    <div className="mb-[9.8rem]">
       <Header />
-      {/* <Introduction /> */}
-      <Products />
-    </>
+      <Introduction />
+    </div>
   );
 }

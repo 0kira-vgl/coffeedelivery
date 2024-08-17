@@ -6,28 +6,28 @@ import { FaShoppingCart } from "react-icons/fa";
 
 export function Header() {
   return (
-    <header className="flex h-24 w-full justify-between px-40 py-8">
-      <div>
+    <header className="bg-base-background flex h-24 w-full justify-center">
+      <div className="content-defaullContainer mx-auto flex w-full max-w-[70rem] items-center justify-between">
         <Link href="/">
-          <Image src={Logo} alt="Coffe Delivery Logo" />
-        </Link>
-      </div>
-
-      <div className="flex gap-3">
-        <Link
-          href="/"
-          className="flex items-center justify-center gap-2 rounded-md bg-purple-300/50 p-2 text-purple-600"
-        >
-          <FaLocationDot className="size-5 text-purple-600" />
-          Porto Alegre, RS
+          <Image src={Logo} alt="Coffe Delivery Logo" className="select-none" />
         </Link>
 
-        <Link
-          href="/"
-          className="flex items-center justify-center rounded-md bg-yellow-400/30 px-3"
-        >
-          <FaShoppingCart className="size-5 text-yellow-600" />
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            href="/"
+            className="bg-brand-purple-light text-brand-purple-dark text-regular-s relative flex h-[2.3rem] min-w-[2.3rem] items-center justify-center gap-1 rounded-md px-2"
+          >
+            <FaLocationDot size={20} className="text-brand-purple" />
+            Porto Alegre, RS
+          </Link>
+
+          <Link
+            href="/"
+            className="bg-brand-yellow-light text-brand-yellow-dark text-regular-s relative flex h-[2.3rem] min-w-[2.3rem] items-center justify-center gap-1 rounded-md px-2"
+          >
+            <FaShoppingCart size={20} className="text-brand-yellow" />
+          </Link>
+        </div>
       </div>
     </header>
   );

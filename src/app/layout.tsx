@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Baloo_2 } from "next/font/google";
+import { Baloo_2, Roboto } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-const Baloo2 = Baloo_2({
+const baloo2 = Baloo_2({
   subsets: ["latin"],
   variable: "--font-baloo",
+});
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -18,8 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth antialiased ${Baloo2.variable}`}>
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`scroll-smooth antialiased ${baloo2.variable}`}>
+      <body className={`bg-base-background text-base-text ${roboto.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
+
+// mx-auto w-full max-w-[70rem]
