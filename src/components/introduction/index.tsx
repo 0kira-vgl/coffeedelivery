@@ -7,7 +7,10 @@ import { PiPackageFill, PiTimerFill, PiCoffeeFill } from "react-icons/pi";
 
 export function Introduction() {
   return (
-    <section className="bg-pattern flex h-[34rem] w-full items-center justify-center bg-cover bg-center bg-no-repeat">
+    <section
+      id="introduction"
+      className="flex h-[34rem] w-full items-center justify-center bg-pattern bg-cover bg-center bg-no-repeat"
+    >
       <div className="mx-auto flex w-full max-w-[70rem] items-center justify-between gap-14">
         <div>
           <section className="space-y-5">
@@ -15,7 +18,7 @@ export function Introduction() {
               Encontre o café perfeito <br /> para qualquer hora do dia
             </TitleText>
 
-            <RegularText className="text-base-subtitle text-regular-l">
+            <RegularText className="text-regular-l text-base-subtitle">
               Com o Coffee Delivery você recebe seu café onde estiver, a
               qualquer hora
             </RegularText>

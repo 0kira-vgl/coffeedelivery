@@ -22,7 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`scroll-smooth antialiased ${baloo2.variable}`}>
+    <html
+      lang="en"
+      className={`scroll-pt-24 scroll-smooth antialiased ${baloo2.variable}`}
+    >
       <body className={`bg-base-background text-base-text ${roboto.className}`}>
         {children}
       </body>

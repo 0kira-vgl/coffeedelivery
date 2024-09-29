@@ -6,16 +6,16 @@ import { FaShoppingCart } from "react-icons/fa";
 
 export function Header() {
   return (
-    <header className="bg-base-background flex h-24 w-full justify-center">
+    <header className="sticky top-0 z-50 flex h-24 w-full justify-center bg-base-background/20 backdrop-blur-sm">
       <div className="content-defaullContainer mx-auto flex w-full max-w-[70rem] items-center justify-between">
-        <Link href="/">
+        <Link href="#introduction">
           <Image src={Logo} alt="Coffe Delivery Logo" className="select-none" />
         </Link>
 
         <div className="flex items-center gap-3">
           <Link
             href="/"
-            className="bg-brand-purple-light text-brand-purple-dark text-regular-s relative flex h-[2.3rem] min-w-[2.3rem] items-center justify-center gap-1 rounded-md px-2"
+            className="relative flex h-[2.3rem] min-w-[2.3rem] items-center justify-center gap-1 rounded-md bg-brand-purple-light px-2 text-regular-s text-brand-purple-dark"
           >
             <FaLocationDot size={20} className="text-brand-purple" />
             Porto Alegre, RS
@@ -23,7 +23,7 @@ export function Header() {
 
           <Link
             href="/"
-            className="bg-brand-yellow-light text-brand-yellow-dark text-regular-s relative flex h-[2.3rem] min-w-[2.3rem] items-center justify-center gap-1 rounded-md px-2"
+            className="relative flex h-[2.3rem] min-w-[2.3rem] items-center justify-center gap-1 rounded-md bg-brand-yellow-light px-2 text-regular-s text-brand-yellow-dark"
           >
             <FaShoppingCart size={20} className="text-brand-yellow" />
           </Link>
