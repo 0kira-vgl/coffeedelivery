@@ -14,7 +14,7 @@ export function TitleText(props: TitleTextProps) {
     <h1
       {...props}
       className={twMerge(
-        "text-base-title font-title text-5xl font-extrabold leading-[130%]",
+        "font-title text-5xl font-extrabold leading-[130%] text-base-title",
         props.className,
       )}
     >
@@ -23,12 +23,12 @@ export function TitleText(props: TitleTextProps) {
   );
 }
 
-export function RegularText(props: TitleTextProps) {
+export function RegularText(props: RegularTextProps) {
   return (
     <p
       {...props}
       className={twMerge(
-        "text-regular-m text-base-title leading-[130%]",
+        "text-regular-m leading-[130%] text-base-title",
         props.className,
       )}
     >

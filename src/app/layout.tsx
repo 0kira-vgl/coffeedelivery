@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Baloo_2, Roboto } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const baloo2 = Baloo_2({
   subsets: ["latin"],
@@ -23,10 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`scroll-pt-24 scroll-smooth antialiased ${baloo2.variable}`}
     >
       <body className={`bg-base-background text-base-text ${roboto.className}`}>
+        <Header />
         {children}
       </body>
     </html>
