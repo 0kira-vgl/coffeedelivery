@@ -10,7 +10,7 @@ export function InfoWithIcon({ icon, text, iconBg }: InfoWithIconProps) {
   return (
     <div className="flex items-center gap-3">
       <div
-        className={`text-base-white flex size-8 items-center justify-center rounded-full ${iconBg}`}
+        className={`flex size-8 items-center justify-center rounded-full text-base-white ${iconBg}`}
       >
         {icon}
       </div>

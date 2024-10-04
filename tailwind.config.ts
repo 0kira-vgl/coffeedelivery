@@ -19,6 +19,11 @@ const config = {
     },
 
     extend: {
+      backgroundColor: {
+        "custom-gradient":
+          "linear-gradient(102.89deg, #dbac2c 2.61%, #8047f8 98.76%)",
+      },
+
       colors: {
         "base-white": "#FFFFFF",
         "base-background": "#FAFAFA",
